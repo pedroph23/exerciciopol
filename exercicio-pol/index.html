@@ -2,19 +2,20 @@
 <head>
 
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 </head>
     <body>
 
 
-            <nav>
+            <nav style="background: #fcbe14"> 
                     <div class="nav-wrapper">
-                      <a href="#" class="brand-logo">Logo</a>
+                      <img src="logo.png" class="brand-logo"></img>
                       <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <li>Data: 25/09/18</li>
                         <li><a href="http://www.dontpad.com/polsemgasolina.epizy-help" class="material-icons prefix ">help</a></li>
-                      
+
                       </ul>
                     </div>
            </nav>
@@ -25,26 +26,34 @@
         
 
     <form class="container">
+
         <br/>
             <div class="col s12 m8 offset-m2 l6 offset-l3">
                     <div class="card-panel grey lighten-5 z-depth-1">
                       
                             <div class="input-field col s6">
-                                <i class="material-icons prefix " >code</i>
-                                <input type="text" class="validate" id="entrada">
-                                <label for="icon_prefix">Insira o código</label>
+                                <i class="material-icons prefix "   style="color: #000;">code</i>
+                                <input type="text" class="validate" id="entrada" style=" border-bottom: 1px solid #000;box-shadow: 0 1px 0 0 #000;">
+                                <label for="icon_prefix" style="color: #000;">Insira o código</label>
                             </div>
                 </div>
         <br/>
-            <button class="waves-effect waves-light btn">Compilar</button>
+            <button class="waves-effect waves-light btn" style="background-color: #780f69">Compilar</button>
+            
          <br/>
         </form>
 
-        <form>
+        <br/>
+        <!-- <div class="progress" >
+                <div class="indeterminate" ></div>
+        </div> -->
+        <br/>
 
+        <form>
+                
         <br/>   
         <h3>Resultado: </h3>
-        <textarea id="resultado" style="height: 100" class="materialize-textarea"></textarea>
+        <textarea id="resultado" style="height: 100;  border-bottom: 1px solid #000;box-shadow: 0 1px 0 0 #000;" class="materialize-textarea "></textarea>
         <br/>
             
         </form>
